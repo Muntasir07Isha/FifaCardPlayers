@@ -1,0 +1,99 @@
+*{
+    box-sizing:border-box;
+}
+
+body{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin:0;
+    background: linear-gradient(to right, blue,white);
+}
+
+.container{
+    display: flex;
+    width:100vw;
+}
+
+.bg-image{
+    background-size:cover ;
+    background-position: center;
+    background-repeat:no-repeat ;
+}
+.image-1{
+    background-image: url(https://wallpapercave.com/wp/wp13342563.jpg);
+}
+
+.image-2{
+    background-image: url(https://wallpapercave.com/uwp/uwp4251333.jpeg);
+}
+
+.image-3{
+    background-image: url(https://wallpapercave.com/wp/wp8975694.jpg);
+}
+
+.image-4{
+    background-image: url(https://wallpapercave.com/wp/wp11169955.jpg);
+}
+.image-5{
+    background-image: url(https://wallpapercave.com/wp/wp1914400.jpg);
+}
+
+.slide{
+    position:relative;
+    height: 80vh;
+    flex:0.5;
+    border-radius:30px;
+    border: solid 4px goldenrod;
+    color:white;
+    margin:7px;
+    cursor:pointer;
+    transition: all 700ms ease-in;
+
+}
+
+.slide h3{
+    position:absolute;
+    bottom:20px;
+    left:20px;
+    margin:0;
+    opacity:0;
+    font-size:30px;
+    color: white;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: bolder;
+    
+
+    
+}
+
+@media(max-width: 480px){
+    .slide:nth-of-type(4),
+    .slide:nth-of-type(5){
+    display:none;
+    }
+    
+}
+
+
+
+.slide.active{
+    flex:5;
+}
+.slide.active h3{
+    opacity: 1;
+    transition: opacity 0.3s ease-in 0.2s;
+
+}
+
+
+
+
+
+
+
+
+
+
